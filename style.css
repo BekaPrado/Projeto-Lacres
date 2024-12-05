@@ -1,30 +1,27 @@
-/* Reset de Margens e Padding */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-/* Corpo e Fonte */
 body {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.6;
     color: #333;
-    overflow-y: scroll; /* Barra de rolagem sempre visível */
+    overflow-y: scroll; 
     height: 100%;
-    background-image: url('fundo.jpg'); /* Substitua pelo caminho correto da imagem */
+    background-image: url('fundo.jpg'); 
     background-repeat: no-repeat;
-    background-size: cover; /* Garante que a imagem cobre todo o fundo */
-    background-attachment: fixed; /* Faz o fundo ficar fixo */
-    background-position: center; /* Centraliza a imagem */
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center; 
 }
 
-/* Cabeçalho */
 header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 20px; /* Reduz o espaçamento interno vertical */
+    padding: 5px 20px; 
     position: fixed;
     top: 0;
     left: 0;
@@ -61,20 +58,20 @@ header nav ul li a:hover {
     background-color: #0d19b6;
 }
 
-/* Seções de Conteúdo */
+
 .main-content {
-    margin-top: 80px; /* Espaço para o cabeçalho fixo */
+    margin-top: 80px; 
     padding: 40px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    min-height: calc(100vh - 80px); /* Garante que o conteúdo ocupe toda a altura da tela */
+    min-height: calc(100vh - 80px);
     box-sizing: border-box;
 }
 
-/* Estilo específico para a seção 'Início' */
+
 .content-text-left {
     width: 100%;
     max-width: 900px;
@@ -95,7 +92,6 @@ header nav ul li a:hover {
     text-align: center;
 }
 
-/* Botão de Mais Informações */
 .btn {
     background-color: #06023a65;
     color: white;
@@ -113,7 +109,6 @@ header nav ul li a:hover {
     background-color: #0b1fbb98;
 }
 
-/* Estilo específico para a seção 'Mais Informações' */
 #mais-informacoes {
     background-color: rgba(0, 0, 0, 0.5);
 }
@@ -135,12 +130,11 @@ header nav ul li a:hover {
     line-height: 1.8;
 }
 
-/* Estilo específico para a seção 'Sobre' */
 .content-text-right {
     width: 100%;
     max-width: 900px;
-    margin-right: 0; /* Alinha o texto à direita */
-    text-align: right; /* Alinha o texto à direita */
+    margin-right: 0; 
+    text-align: right; 
     
 }
 
@@ -161,9 +155,9 @@ header nav ul li a:hover {
     background-color: rgba(1, 1, 19, 0.26);
     border-radius: 19px;
     position: left;
-    margin: 0 auto; /* Centraliza */
+    margin: 0 auto; 
     width: 500px;
-    margin-left: -170px; /* Ajusta mais para a esquerda */
+    margin-left: -170px; 
 }
 
 .content-text h1 {
@@ -174,7 +168,7 @@ header nav ul li a:hover {
 }
 
 .content-text-oi{
-    min-height: calc(120vh - 80px); /* Garante que o conteúdo ocupe toda a altura da tela */
+    min-height: calc(120vh - 80px); 
 }
 .content-text-oi h1 {
     font-size: 2.5rem;
@@ -208,80 +202,81 @@ header nav ul li a:hover {
 
 .timeimg {
     display: flex;
-    justify-content: center; /* Centraliza as imagens */
-    gap: 100px; /* Espaçamento entre as imagens */
-    margin-top: -400px; /* Espaçamento superior */
+    justify-content: center; 
+    gap: 100px; 
+    margin-top: -400px; 
     margin-left: 390px;
 }
 
 .timeimg img {
-    width: 500px; /* Largura de cada imagem */
-    height: auto; /* Mantém a proporção */
-    border-radius: 10px; /* Bordas arredondadas */    transition: transform 0.3s ease; /* Efeito ao passar o mouse */
+    width: 500px; 
+    height: auto; 
+    border-radius: 10px;    
+    transition: transform 0.3s ease; 
 }
 
 .image-container img:hover {
-    transform: scale(1.1); /* Ampliação ao passar o mouse */
+    transform: scale(1.1); 
 }
 
 .images-container {
     display: flex;
-    justify-content: center; /* Centraliza as imagens */
-    gap: 150px; /* Espaçamento entre as imagens */
-    margin-top: 200px; /* Espaçamento superior */
+    justify-content: center; 
+    gap: 150px; 
+    margin-top: 200px; 
 }
 
 .images-container img {
-    width: 150px; /* Largura de cada imagem */
-    height: auto; /* Mantém a proporção */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra nas imagens */
-    transition: transform 0.3s ease; /* Efeito ao passar o mouse */
+    width: 150px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
 }
 
 .images-container img:hover {
-    transform: scale(1.1); /* Ampliação ao passar o mouse */
+    transform: scale(1.1); 
 }
 
-/* Estilo para o container de imagens */
+
 .image-container {
     display: flex;
-    justify-content: center; /* Centraliza as imagens */
-    gap: 100px; /* Espaçamento entre as imagens */
-    margin-top: 20px; /* Espaçamento superior */
+    justify-content: center;
+    gap: 100px; 
+    margin-top: 20px; 
 }
 
 .image-container img {
-    width: 200px; /* Largura de cada imagem */
-    height: auto; /* Mantém a proporção */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra nas imagens */
-    transition: transform 0.3s ease; /* Efeito ao passar o mouse */
+    width: 200px; 
+    height: auto; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
 }
 
 .image-container img:hover {
-    transform: scale(1.1); /* Ampliação ao passar o mouse */
+    transform: scale(1.1); 
 }
 
 .images-container {
     display: flex;
-    justify-content: center; /* Centraliza as imagens */
-    gap: 150px; /* Espaçamento entre as imagens */
-    margin-top: 200px; /* Espaçamento superior */
+    justify-content: center; 
+    gap: 150px; 
+    margin-top: 200px; 
 }
 
 .images-container img {
-    width: 150px; /* Largura de cada imagem */
-    height: auto; /* Mantém a proporção */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra nas imagens */
-    transition: transform 0.3s ease; /* Efeito ao passar o mouse */
+    width: 150px; 
+    height: auto; 
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+    transition: transform 0.3s ease; 
 }
 
 .images-container img:hover {
-    transform: scale(1.1); /* Ampliação ao passar o mouse */
+    transform: scale(1.1); 
 }
-/* Rodapé */
+/*rodapé*/
 footer {
     text-align: center;
     padding: 10px;
@@ -293,32 +288,11 @@ footer {
     position: fixed;
 }
 
-
-
-
-
-/* Responsividade */
-
-/* Para dispositivos menores que 768px (Tablets e Celulares) */
+/*tablet*/
 @media screen and (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: center;
-        padding: 10px;
-    }
-
     header nav ul {
         flex-direction: column;
-        align-items: center;
-        margin-top: 20px;
-    }
-
-    header nav ul li {
-        margin: 10px 0;
-    }
-
-    header .logo img {
-        height: 50px;
+        display: none; /* Oculta o menu */
     }
 
     .main-content {
@@ -327,19 +301,9 @@ footer {
 
     .content-text-left h1 {
         font-size: 2rem;
-        margin-left: 0;
     }
 
     .content-text-left p {
-        font-size: 1rem;
-        margin-right: 0;
-    }
-
-    .content-text-right h1 {
-        font-size: 2rem;
-    }
-
-    .content-text-right p {
         font-size: 1rem;
     }
 
@@ -349,18 +313,26 @@ footer {
     }
 
     footer {
-        padding: 20px;
+        padding: 15px;
     }
 }
 
-/* Para dispositivos ainda menores que 480px (Smartphones) */
+/*celular*/
 @media screen and (max-width: 480px) {
-    .content-text-left h1 {
-        font-size: 1.8rem;
+    header {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .content-text-left p,
-    .content-text-right p {
+    header .logo img {
+        height: 50px;
+    }
+
+    .content-text-left h1 {
+        font-size: 1.5rem;
+    }
+
+    .content-text-left p {
         font-size: 1rem;
     }
 
@@ -372,17 +344,4 @@ footer {
     footer {
         padding: 10px;
     }
-}
-
-@keyframes fadeIn {
-    0% {
-        opacity: 0;
-    }
-    100% {
-        opacity: 1;
-    }
-}
-
-.main-content, footer {
-    animation: fadeIn 1s ease-in-out;
 }
